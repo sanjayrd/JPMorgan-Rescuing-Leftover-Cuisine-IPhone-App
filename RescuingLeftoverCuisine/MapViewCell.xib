@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="mapCell" rowHeight="116" id="tn1-1c-Inh" customClass="MapViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="116"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="tn1-1c-Inh" id="kv6-Kf-xso">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" scrollEnabled="NO" pitchEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="krB-JF-qpR">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="116"/>
+                    </mapView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="krB-JF-qpR" firstAttribute="top" secondItem="kv6-Kf-xso" secondAttribute="top" id="1DW-CP-cWl"/>
+                    <constraint firstItem="krB-JF-qpR" firstAttribute="leading" secondItem="kv6-Kf-xso" secondAttribute="leading" id="LV1-T5-rqV"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="krB-JF-qpR" secondAttribute="bottom" constant="-8.5" id="oKc-5N-c6G"/>
+                    <constraint firstAttribute="trailing" secondItem="krB-JF-qpR" secondAttribute="trailing" id="rIH-xr-SIT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="mapView" destination="krB-JF-qpR" id="bQu-7U-rqs"/>
+            </connections>
+            <point key="canvasLocation" x="329" y="46"/>
+        </tableViewCell>
+    </objects>
+</document>
